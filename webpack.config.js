@@ -56,6 +56,11 @@ module.exports = {
     }
   },
   devServer: {
+    port: 3000, // 端口
+    progress: true, // 打包进度条
+    contentBase: './docs', // 以这个目录作为静态服务
+    open: true, // 打包完成自动打开浏览器
+    compress: true, // 启用压缩
     historyApiFallback: true,
     noInfo: true
   },
